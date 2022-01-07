@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric figures | JS Course</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Geometric figures</h1>
+    </header>    
+    <main>
+        <a href="./index.html"><button class="button">Back to the menu</button></a>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, corrupti minus quos veritatis impedit autem porro. Asperiores facilis, exercitationem saepe impedit iste vero in modi dolore nisi dolorum inventore adipisci?</p>
+        <section class="figure-section figure-square">
+            <h2 class="figure-section__title">Square</h2>
+            <div class="figure-section__img figure-section--square"></div>
+            <form action="/" class="figure-form">
+                <label class="figure-form__label" for="SquareInput">Write how long each side of your square is</label>
+                <input class="figure-form__input" id="SquareInput" type="number"/>
+                <button class="figure-form__button--square button" type="button" onclick="calcSquarePerimeter()">Calc perimeter</button>
+                <button class="figure-form__button--square button" type="button" onclick="calcSquareArea()">Calc area</button>
+            </form>
+        </section>
+        <section class="figure-section figure-triangle">
+            <h2 class="figure-section__title">Triangle</h2>
+            <div class="figure-section__img figure-section--triangle"></div>
+            <form action="/" class="figure-form">
+                <label class="figure-form__label" for="TriangleInput">Write how long first side of your triangle is</label>
+                <input class="figure-form__input" id="TriangleInputSide1" type="number"/>
+                <label class="figure-form__label" for="TriangleInput">Write how long second side of your triangle is</label>
+                <input class="figure-form__input" id="TriangleInputSide2" type="number"/>
+                <label class="figure-form__label" for="TriangleInput">Write how long third (the base) side of your triangle is</label>
+                <input class="figure-form__input" id="TriangleInputBase" type="number"/>
+                <label class="figure-form__label" for="TriangleInput">Write how high is the height of your triangle</label>
+                <input class="figure-form__input" id="TriangleInputHeight" type="number"/>
+                <button class="figure-form__button--triangle button" type="button" onclick="calcTrianglePerimeter()">Calc perimeter</button>
+                <button class="figure-form__button--triangle button" type="button" onclick="calcTriangleArea()">Calc area</button>
+                <div class="figure-form__isos">
+                    <p>This function only works for isosceles triangles</p>
+                    <button class="figure-form__button--triangle button" type="button" onclick="calcTriangleHeight()">Calc height</button>
+                </div>
+            </form>
+        </section>
+        <section class="figure-section figure-circle">
+            <h2 class="figure-section__title">Circle</h2>
+            <div class="figure-section__img figure-section--circle"></div>
+            <form action="/" class="figure-form">
+                <label class="figure-form__label" for="CircleInput">Write how long is the radius?</label>
+                <input class="figure-form__input" id="CircleInput" type="number"/>
+                <button class="figure-form__button--circle button" type="button" onclick="calcCirclePerimeter()">Calc perimeter</button>
+                <button class="figure-form__button--circle button" type="button" onclick="calcCircleArea()">Calc area</button>
+                <button class="figure-form__button--circle button" type="button" onclick="calcCircleDiameter()">Calc diamater</button>
+            </form>
+        </section>
+    </main>
+    <script src="./figures.js"></script>
+</body>
+</html>
