@@ -77,13 +77,15 @@ function calcSquarePerimeter() {
     const input = document.getElementById("SquareInput");
     const side = input.value;
     const perimeter = squarePerimeter(side);
-    alert(perimeter);
+    const paragraphResult = document.getElementById("resultSquare");
+    paragraphResult.innerHTML = `The perimeter of the square is: ${perimeter}`;
 }
 function calcSquareArea() {
     const input = document.getElementById("SquareInput");
     const side = input.value;
     const area = squareArea(side);
-    alert(area);
+    const paragraphResult = document.getElementById("resultSquare");
+    paragraphResult.innerHTML = `The area of the square is: ${area}`;
 }
 // Triangle
 function calcTrianglePerimeter() {
@@ -94,7 +96,8 @@ function calcTrianglePerimeter() {
     input = document.getElementById("TriangleInputBase");
     const base = parseInt(input.value);
     const perimeter = trianglePerimeter(side1, side2, base);
-    alert(perimeter);
+    const paragraphResult = document.getElementById("resultTriangle");
+    paragraphResult.innerHTML = `The perimeter of the triangle is: ${perimeter}`;
 }
 function calcTriangleArea() {
     let input = document.getElementById("TriangleInputBase");
@@ -102,7 +105,8 @@ function calcTriangleArea() {
     input = document.getElementById("TriangleInputHeight");
     const height = parseInt(input.value);
     const area = triangleArea(base,height);
-    alert(area);
+    const paragraphResult = document.getElementById("resultTriangle");
+    paragraphResult.innerHTML = `The area of the triangle is: ${area}`;
 }
 function calcTriangleHeight() {
     let input = document.getElementById("TriangleInputSide1");
@@ -112,24 +116,28 @@ function calcTriangleHeight() {
     input = document.getElementById("TriangleInputBase");
     const base = parseInt(input.value);
     const height = triangleHeight(side1, side2, base);
-    alert(height);
+    const paragraphResult = document.getElementById("resultTriangle");
+    paragraphResult.innerHTML = `The heigth of the triangle is: ${height}`;
 }
 // Circle
 function calcCircleDiameter() {
     let input = document.getElementById("CircleInput");
     const radius = parseInt(input.value);
     const diameter = circleDiameter(radius);
-    alert(diameter);
+    const paragraphResult = document.getElementById("resultCircle");
+    paragraphResult.innerHTML = `The diameter of the circle is: ${diameter}`;
 }
 function calcCirclePerimeter() {
     let input = document.getElementById("CircleInput");
     const radius = parseInt(input.value);
     const perimeter = circlePerimeter(radius);
-    alert(perimeter);
+    const paragraphResult = document.getElementById("resultCircle");
+    paragraphResult.innerHTML = `The perimeter of the circle is: ${perimeter}`;
 }
 function calcCircleArea() {
     let input = document.getElementById("CircleInput");
     const radius = parseInt(input.value);
     const area = circleArea(radius);
-    alert(area);
+    const paragraphResult = document.getElementById("resultCircle");
+    paragraphResult.innerHTML = `The area of the circle is: ${area}`;
 }

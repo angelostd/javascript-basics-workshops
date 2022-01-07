@@ -5,31 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | JS Course</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header main-header">
         <h1>Menu</h1>
+        <p>Javascript implementation in web pages</p>
         <nav>
             <ul>
-                <li><a href="./figures.html"><button>Geometric figures calculator</button></a></li>
-                <li><a href="#"><button>a</button></a></li>
-                <li><a href="#"><button>a</button></a></li>
+                <li><a href="./html/figures.html"><button class="button">Geometric figures calculator</button></a></li>
+                <li><a href="./html/discounts.html"><button class="button">Discounts</button></a></li>
+                <li><a href="#"><button class="button">a</button></a></li>
+                <li><a href="#"><button class="button">a</button></a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h2>1</h2>
-        </section>
-        <section>
-            <h2>2</h2>
-        </section>
-        <section>
-            <h2>3</h2>
+    <main class="main">
+        <section class="cards-container">
+            <article class="cards-container__figures card">
+                <h2>Geometric figures calculator</h2>
+                <div class="card__image card__image--figures"></div>
+                <!-- photo by @kaboompics at Pexel.com -->
+                <p class="card__description">Basic calculator for the perimeter and area of a square, triangle and circle</p>
+                <a href="./html/figures.html"><button class="button card__button">Go!</button></a>
+            </article>
+            <article class="cards-container__discounts card">
+                <h2>Discounts</h2>
+                <div class="card__image card__image--discounts"></div>
+                <!-- photo by @Max Fischer at Pexel.com -->
+                <p class="card__description">Discount calculator.</p>
+                <a href="./html/figures.html"><button class="button card__button">Go!</button></a>
+            </article>
+            <article class="cards-container__figures card">
+                <h2>ar</h2>
+                <div class="card__image card__image--figures"></div>
+                <!-- photo by @kaboompics at Pexel.com -->
+                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="./html/figures.html"><button class="button card__button">Go!</button></a>
+            </article>
+            <article class="cards-container__figures card">
+                <h2>a</h2>
+                <div class="card__image card__image--figures"></div>
+                <!-- photo by @kaboompics at Pexel.com -->
+                <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="./html/figures.html"><button class="button card__button">Go!</button></a>
+            </article>
         </section>
     </main>
-    <footer>
-        by @angelostd 2022
+    <footer class="footer">
+        <p>by @angelostd 2022</p>
     </footer>
 </body>
 </html>
