@@ -12,8 +12,11 @@
 }
 html {
     font-size: 62.5%;
-    font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     scroll-behavior: smooth;
+}
+body {
+    height: 100vh;
 }
 /* header section */
 .header {
@@ -53,6 +56,9 @@ html {
 }
 .header ul li a button:hover {
     transform: scale(1.1);
+    background-color: var(--main-header-background);
+    border: 2px solid var(--general-black);
+    color: var(--general-black);
 }
 .button {
     border: none;
@@ -67,23 +73,35 @@ html {
 .cards-container {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
     min-width: 320px;
     background-color: var(--main-general-background);
 }
-.card {
-    width: 80%;
+.cards-container ul {
+    list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
-    height: auto;
-    min-height: 354px;
+}
+.cards-container ul li {
+    width: 80%;
     min-width: 288px;
     max-width: 400px;
+}
+
+.cards-container ul li a {
+    width: auto;
+    color: var(--general-black);
+    text-decoration: none;
+}
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    min-height: 356px;
     margin: 8px 0;
     border-radius: 12px;
     background-color: #fff;
@@ -91,49 +109,70 @@ html {
 }
 .card h2 {
     font-size: 1.8rem;
-    padding-top: 8px;
+    letter-spacing: 0.05rem;
 }
 .card .card__image {
     width: 100%;
-    height: 20em;
+    min-height: 178px;
+    height: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+.cards-container__figures {
+    margin-top: 16px;
+}
+.cards-container__salaries {
+    margin-bottom: 16px;
+}
 .card__image--figures {
-    background-image: url('https://images.pexels.com/photos/5477785/pexels-photo-5477785.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-image: url('https://images.pexels.com/photos/6692946/pexels-photo-6692946.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 .card__image--discounts {
     background-image: url('https://images.pexels.com/photos/5869619/pexels-photo-5869619.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+.card .card__image--statistics {
+    background-image: url('https://images.pexels.com/photos/7876507/pexels-photo-7876507.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: top;
+}
+.card__image--salaries {
+    background-image: url('https://images.pexels.com/photos/4968382/pexels-photo-4968382.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 .card__description {
     width: 85%;
     font-size: 1.4rem;
     text-align: justify;
 }
-.card a {
-    width: 75%;
-}
-.card__button {
-    margin: 0;
-    font-size: 1.4rem;
-    font-weight: bold;
-    width: 100%;
-    background-color: var(--main-button-background);
-}
-.card__button:hover {
-    transform: scale(1.1);
-}
-/* footer section */
+/* footer section  */
 .footer {
     width: 100%;
     min-width: 320px;
     display: flex;
-    /* position: absolute; */
-    height: 5vh;
+    height: 10vh;
     bottom: 0;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 1.4rem;
     background-color: var(--main-header-background);
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+.footer-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer-section a{
+    color: var(--general-black);
+}
+.fab {
+    margin-right: 12px;
+}
+.fa-platzi {
+    width: 18px;
+    height: 18px;
+    background-image: url('https://icons-for-free.com/iconfiles/png/512/platzi-1324440213777394405.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
