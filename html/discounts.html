@@ -4,33 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discounts | JS Course</title>
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>Discounts | JS Workshop</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Discounts</h1>
-    </header>
-    <main>
-        <a href="../index.html"><button class="button">Back to the menu</button></a>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus cupiditate nesciunt inventore perferendis quas. Pariatur accusamus eius, ab ad sit dicta aliquid, exercitationem reiciendis fugiat, non est praesentium neque error.</p>
-        <section>
-            <p>description</p>
-            <div class="img"></div>
-            <form action="/">
-                <label for="InputPrice">Write the price of the product</label>
-                <input id="InputPrice" type="number"/>
-                <label for="InputDiscount">Write the discount on the product</label>
-                <input id="InputDiscount" type="number"/>
-                <button type="button" onclick=
-                "calcPriceWithDiscountAuto()">calc price with discounts</button>
-                <p id="result"></p>
-            </form>
+        <p>Calculator for discounts on a product price.</p>
+        <nav>
+            <ul>
+                <li><a href="./figures.html"><button class="button">Geometric figures calculator</button></a></li>
+                <li><a href="../index.html"><button class="button">Back to the menu</button></a></li>
+                <li><a href="./statistics.html"><button class="button">Statistics</button></a></li>
+                <li><a href="./salaries.html"><button class="button">Salaries</button></a></li>
+            </ul>
+        </nav>
+    </header>  
+    <main class="main">
+        <section class="discount-section">
+            <article class="discount-card card">
+                <div class="discount-card__img"></div>
+                <!-- photo by @emirkhanbal at Pexels.com -->
+                <form action="/" class="form">
+                    <div class="form__input-container">
+                        <label for="InputPrice" class="form_label">Write the price of the product</label>
+                        <input id="InputPrice" class="form_input" type="number" placeholder="$15, 000"/>
+                        <label for="InputDiscount" class="form_label">Write the discount on the product</label>
+                        <input id="InputDiscount" class="form_input" type="number" placeholder="20%"/>
+                        <button type="button" class="discount-button button" onclick=
+                        "calcPriceWithDiscountAuto()">Calculate price with discounts</button>
+                    </div>
+                </form>
+                <p id="result" class="results"></p>
+            </article>
         </section>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <section class="footer-section">
+            <a target="_blank" href="https://github.com/angelostd"><i class="fab fa-github fa-lg"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/angelostd/"><i class="fab fa-linkedin fa-lg"></i></a>
+        </section>
+        <section class="footer-section">
+            <p>by angelostd (2022)</p>
+        </section>
+        <section class="footer-section">
+            <a target="_blank" href="https://platzi.com/p/angelduarte/"><i class="fab fa-platzi"></i></a>
+            <a target="_blank" href="https://www.behance.net/angelostd"><i class="fab fa-behance fa-lg"></i></a>
+        </section>
     </footer>
+    <script src="https://kit.fontawesome.com/8aeb1532d4.js" crossorigin="anonymous"></script>
     <script src="../js/discounts.js"></script>
 </body>
 </html>

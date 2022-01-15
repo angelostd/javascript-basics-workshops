@@ -13,7 +13,7 @@ function saveData() {
     for(let i = 0; i < arrayText.length; i++){
         arrayNumber[i] = parseInt(arrayText[i]);
     }
-    console.log(arrayNumber);
+    // console.log(arrayNumber);
     return arrayNumber;
 }
 
@@ -26,6 +26,9 @@ function calcAverage() {
     );
     const averageArray = sumArray / array.length;
     console.log(averageArray);
+    const paragraphResult = document.getElementById("result");
+    paragraphResult.innerText = `The average in the array is: ${averageArray}`
+    return averageArray;
 }
 
 // const array = [100, 200, 500, 40000000000];
@@ -67,6 +70,8 @@ function calcMedian() {
         median = array[middleArray];
     }
     console.log(median);
+    const paragraphResult = document.getElementById("result");
+    paragraphResult.innerText = `The median in the array is: ${median}`
 }
 
 // let array1 = [1, 2, 3, 1, 2, 3, 4, 2, 2, 2, 1];
@@ -113,4 +118,6 @@ function calcTrend() {
     );
     const trend = arrayReturned[arrayReturned.length - 1];
     console.log(trend);
+    const paragraphResult = document.getElementById("result");
+    paragraphResult.innerText = `The trend in the array is: ${trend[0]} with ${trend[1]} reps`
 }

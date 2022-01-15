@@ -16,7 +16,9 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
 }
 /* header section */
 .index-header, .header {
@@ -37,8 +39,12 @@ body {
     font-size: 1.6rem;
     margin-bottom: 12px;
 }
-.header h1, .header p {
+.header h1,
+.header p {
     padding-left: 1.5em;
+}
+.index-header h1 {
+    padding: 16px 0;
 }
 .header nav {
     width: 100%;
@@ -74,7 +80,10 @@ body {
 /* main section */
 /* index */
 .main {
-    width: 100%;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    flex-grow : 1;
 }
 .cards-container {
     width: 100%;
@@ -180,17 +189,19 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid red;
+    filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 0.30));
 }
 .figure__title {
     font-size: 2.4rem;
 }
-.figure-form {
+.figure-form,
+.form {
     width: 100%;
     height: auto;
     min-width: 288px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 .form__input-container {
@@ -201,12 +212,14 @@ body {
     text-align: center;
     margin: 16px 0;
 }
-.figure-form__label {
+.figure-form__label,
+.form_label {
     width: 90%;
     padding: 8px 0;
     font-size: 1.4rem;
 }
-.figure-form__input {
+.figure-form__input,
+.form_input {
     width: 90%;
 }
 .figure-form p {
@@ -214,9 +227,11 @@ body {
     text-align: center;
     margin-top: 12px;
 }
-.figure-form__button {
+.figure-form__button,
+.discount-button {
     background-color: #222;
     color: #fff;
+    width: 90%;
     font-size: 1.4rem;
 }
 .results {
@@ -227,16 +242,86 @@ body {
     margin: 8px;
 }
 .figure__square {
+    margin-top: 24px;
     background-color: #FFAD60;
 }
 .figure__triangle {
     background-color: #FFEEAD;
 }
 .figure__circle {
+    margin-bottom: 24px;
     background-color: #96CEB4;
 }
 .figure__img--square {
-    /* background-image: url('https://bangbranding.com/blog/wp-content/uploads/2016/11/700x511_SliderInterior.jpg') */
+    width: 32px;
+    height: 32px;
+    background-color: #96CEB4;
+}
+.figure__img--triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 24px solid #FFAD60;
+}
+.figure__img--circle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #FFEEAD;
+}
+/* discounts */
+.discount-section,
+.statistics-section,
+.salaries-section {
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-grow : 1;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-general-background);
+}
+.discount-card,
+.statistics-card,
+.salaries-card {
+    min-width: 288px;
+    max-width: 400px;
+    min-height: 400px;
+    height: auto;
+    max-height: 920px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 24px;
+    overflow: hidden;
+}
+.statistics-card,
+.salaries-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.discount-card__img {
+    width: 100%;
+    height: auto;
+    min-height: 178px;
+    align-self: top;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://images.pexels.com/photos/953864/pexels-photo-953864.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+.discount-button {
+    margin-top: 16px;
+}
+/* salaries */
+.results span {
+    display: block;
+    font-size: 2.4rem;
+    color: rgb(123, 192, 144);
 }
 /* footer section  */
 .footer {

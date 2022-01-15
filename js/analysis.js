@@ -49,3 +49,14 @@ console.log({
     medianAverageMex,
     medianTop10Mex
 })
+
+// html code block
+const autoCalcSavings = () => {
+    let input = document.getElementById("incomeInput").value;
+    const income = input;
+    input = document.getElementById("expensesInput").value;
+    const expenses = input;
+    const savings = (income - expenses);
+    const paragraphResult = document.getElementById("savings");
+    paragraphResult.innerText = `$${savings}` 
+}

@@ -1,0 +1,13 @@
+.cards-container ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-around;
+}
+.figures-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.figure {
+    margin-top: 24px;
+}
