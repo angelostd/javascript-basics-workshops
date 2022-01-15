@@ -89,6 +89,7 @@ body {
     width: 100%;
     height: auto;
     min-width: 320px;
+    flex-grow: 1;
     background-color: var(--main-general-background);
 }
 .cards-container ul {
@@ -166,6 +167,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
     background-color: var(--main-general-background);
 }
 .figure {
