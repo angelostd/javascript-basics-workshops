@@ -18,4 +18,4 @@ Enter an array in the proper way, you can request the average, median, and trend
 ## Workshop 004: Salaries
 Real-time calculator of your savings based on your incomes and expenses (no buttons here). 
 
-> [deploy](https://angelostd.github.io/javascript-first-workshop/ "deploy")
+> [deploy](https://angelostd.github.io/javascript-basics-workshops/)
